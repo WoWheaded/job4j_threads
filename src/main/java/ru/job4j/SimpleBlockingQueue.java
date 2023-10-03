@@ -34,4 +34,8 @@ public class SimpleBlockingQueue<T> {
         notify();
         return poolEntity;
     }
+
+    public synchronized boolean isEmpty() {
+        return queue.isEmpty();
+    }
 }
